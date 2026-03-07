@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+/* =============================================
+   レスポンシブ対応 - タブレット (max-width: 900px)
+   ============================================= */
+
+@media screen and (max-width: 900px) {
+
+  /*ヘッダー*/
+  .logo {
+    margin-top: 50px;
+  }
+
+  /* ===== カバー ===== */
+  .mycover-content img {
+    top: 20%;
+  }
+
+  .mycover-text01 {
+    left: 25%;
+    top: 5%;
+  }
+
+  .mycover-text01 h2 {
+    font-size: 36px;
+    top: -40px;
+    left: 60px;
+  }
+
+  .mycover-h2back {
+    width: 550px;
+    height: 50px;
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+  }
+
+  .mycover-text02 {
+    top: 12%;
+    left: 25%;
+    font-size: 16px;
+    width: 560px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .inquire-cover {
+    top: 55%;
+    left: 10%;
+  }
+
+
+  /* ===== 共通：コンテナ幅 ===== */
+  .news-content,
+  .about-container,
+  .works-titlearea,
+  .office-content,
+  .link-content,
+  .contact-content {
+    width: 85%;
+  }
+
+  /* ===== News ===== */
+  .news-image {
+    width: 100%;
+    height: auto;
+    margin: 60px 0;
+  }
+
+  /* ===== セクション見出し ===== */
+  .section-back,
+  .section-back-shadow {
+    width: 260px;
+    height: 46px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+    top: 1px;
+    left: 20px;
+  }
+
+  .section-title p {
+    font-size: 20px;
+    left: 120px;
+  }
+
+  .section-about-p {
+    left: 160px !important;
+  }
+
+  .section-office-p {
+    left: 170px !important;
+  }
+
+  .link-p {
+    left: 90px !important;
+  }
+
+  .office-title-back,
+  .office-title {
+    width: 340px;
+  }
+
+  /* ===== About ===== */
+  .about-textbox {
+    padding: 60px 50px;
+  }
+
+  .about-textbox p {
+    font-size: 18px;
+  }
+
+  .about-wrapper {
+    margin: 60px auto;
+  }
+
+  /* ===== About02 ===== */
+  .about02-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about02-content-left {
+    width: 100%;
+  }
+
+  .about02-content-left h2 {
+    font-size: 36px;
+  }
+
+  .about02-content-left p {
+    font-size: 18px;
+  }
+
+  .about02-content-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about02-content-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ===== Works ===== */
+  .game {
+    width: 80%;
+  }
+
+  .game h2 {
+    font-size: 28px;
+    padding: 20px 40px;
+    top: -50px;
+    left: 60%;
+  }
+
+  .game-content {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 30px;
+  }
+
+  .game-left img {
+    width: 140px;
+    margin-bottom: 10px;
+  }
+
+  .service {
+    width: 80%;
+    height: auto;
+    padding: 120px 0 80px;
+  }
+
+  .service h2 {
+    font-size: 28px;
+    padding: 20px 40px;
+    top: 1720px;
+    left: 15%;
+  }
+
+  .service-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .service-left img {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+
+  .setvice-right li {
+    font-size: 16px;
+  }
+
+  /* ===== Office ===== */
+  .ceo-name {
+    font-size: 32px;
+  }
+
+  .ceo-introduce {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .intro-photo img {
+    width: 280px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .intro-text {
+    width: 100%;
+  }
+
+  .office-info {
+    flex-direction: column;
+  }
+
+  .office-info-left,
+  .office-info-right {
+    width: 100%;
+  }
+
+  .office-detail h3 {
+    font-size: 28px;
+  }
+
+  .office-detail p {
+    font-size: 18px;
+  }
+
+  /* ===== Link ===== */
+  .link-list-detail {
+    flex-direction: column;
+  }
+
+  .link-list-L,
+  .link-list-R {
+    width: 100%;
+  }
+
+  .link-list-R {
+    margin-top: 20px;
+    padding: 20px 30px;
+    font-size: 18px;
+  }
+
+  /* ===== Contact ===== */
+  .contact-content h2 {
+    font-size: 72px;
+  }
+
+  .contact-content p {
+    font-size: 24px;
+  }
+
+  .contact-title-p {
+    font-size: 28px !important;
+  }
+
+  .contact-content button {
+    font-size: 28px;
+    padding: 24px 32px;
+  }
+
+  .contact-tel {
+    align-items: center;
+  }
+
+  .contact-tel span {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+  }
+
+  /* ===== Recruit ===== */
+  #recruit-content {
+    width: 85%;
+  }
+
+  .recruit-title {
+    padding: 60px 0 30px 0;
+  }
+
+  .recruit-text-p {
+    font-size: 20px;
+    margin: 0 0 30px 0;
+  }
+
+  .main-work h3,
+  .work-condition h3 {
+    font-size: 32px;
+  }
+
+  .main-work-detail-box {
+    padding-bottom: 60px;
+  }
+
+  .detail-title {
+    font-size: 28px;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 60px;
+  }
+
+  .detail-text-box {
+    width: 85%;
+  }
+
+}

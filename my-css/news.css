@@ -1,0 +1,78 @@
+#news {
+  background-image: url(../images/unicorn-back-right.png);
+  background-repeat: repeat-y;
+  background-position: right top;
+  width: 100%;
+  height: auto;
+}
+
+.news-content {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/*見出し*/
+.section-title {
+  position: relative;
+}
+
+
+.section-title h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  top: 19px;
+  left: 20px;
+}
+
+.section-title p {
+  position: absolute;
+  color: #797997;
+  font-size: 24px;
+  font-weight: 600;
+  top: 28px;
+  left: 140px;
+}
+
+.section-back {
+  position: absolute;
+  background-color: #0000ff;
+  height: 52px;
+  width: 312px;
+  clip-path: polygon(0% 0, 92% 0, 100% 100%, 0% 100%);
+  top: 10px;
+  left: -15px;
+}
+
+.section-back-shadow {
+  position: relative;
+  background-color: #6DB1D3;
+  height: 52px;
+  width: 312px;
+  clip-path: polygon(0% 0, 92% 0, 100% 100%, 0% 100%);
+}
+
+/*見出しここまで*/
+
+/*あとで消す*/
+.news-image {
+  width: 813px;
+  height: 652px;
+  margin: 100px 0;
+}
+
+/* Scroll Animation */
+.section-title {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.section-title.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}

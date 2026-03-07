@@ -1,0 +1,189 @@
+#works {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 100px 0;
+}
+
+.background02 {
+  background-image: url('../images/unicorn08.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.works-titlearea {
+  margin: 0 auto;
+  width: 60%;
+  padding-bottom: 150px;
+}
+
+.works-contentsarea {
+  width: 100%;
+}
+
+.game-cover {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.game {
+  width: 60%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 0 0 30px 0;
+  border: 5px solid #0000ff;
+  border-left: none;
+  padding: 150px 0;
+}
+
+.game h2 {
+  position: absolute;
+  width: auto;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #0000ff;
+  padding: 20px 40px;
+  top: -60px;
+  left: 50%;
+}
+
+.game-content {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+}
+
+.game-left img {
+  width: 180px;
+  height: auto;
+  margin: 0 20px;
+
+}
+
+.game-right-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+
+  /* 下線用 */
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.game-right-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right,
+      #6f6bff 0%,
+      #a5e5ff 100%);
+}
+
+
+.game-right-title h3 {
+  margin: 0;
+}
+
+
+/* Cocoonデフォルトのテーブル装飾をリセット */
+#works table,
+#works table tr,
+#works table th,
+#works table td {
+  border: none !important;
+  background-color: transparent !important;
+  margin: 0 !important;
+}
+
+#works table {
+  border-collapse: collapse !important;
+}
+
+#works th,
+#works td {
+  padding: 6px 12px !important;
+  text-align: left !important;
+  vertical-align: top !important;
+  font-weight: 800 !important;
+  font-size: 12px !important;
+}
+
+#works th {
+  white-space: nowrap !important;
+}
+
+.service-cover {
+  width: 100%;
+  height: auto;
+}
+
+.service {
+  width: 60%;
+  height: 800px;
+  background-color: #fff;
+  border-radius: 0 0 0 30px;
+  border: 5px solid #0000ff;
+  border-right: none;
+  padding: 150px 0;
+  margin: 150px 0 150px auto;
+}
+
+.service h2 {
+  position: absolute;
+  width: auto;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #0000ff;
+  padding: 20px 40px;
+  top: 1460px;
+  left: 35%;
+}
+
+.service-content {
+  display: flex;
+  justify-content: center;
+}
+
+.service-left img {
+  width: 306px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.setvice-right li {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Scroll Animations */
+.game-content,
+.service-content {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.game-content.fade-in,
+.service-content.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}

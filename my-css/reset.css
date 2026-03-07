@@ -1,0 +1,56 @@
+/* =========================================
+Cocoon Child Theme Reset
+目的：ブラウザ差異の吸収のみ（最小限）
+========================================= */
+
+/* box-sizing の統一（Cocoonと干渉しない） */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* body / html の余白リセット */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 画像のはみ出し防止（Cocoonのimg指定と競合しない） */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* リストの余白を揃える（Cocoonが装飾する前提） */
+ul,
+ol {
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+/* figure の余白をブラウザ依存から解放 */
+figure {
+  margin: 0;
+}
+
+/* フォーム要素のフォント継承 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  /* 親要素の文字色を使う */
+  text-decoration: none;
+  /* 下線を消す */
+}
+
+/*一般設定*/
+.my-content {
+  overflow: hidden;
+}

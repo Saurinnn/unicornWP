@@ -1,0 +1,65 @@
+#link {
+  width: 100%;
+  height: auto;
+  padding-bottom: 200px;
+}
+
+.link-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.section-title-link {
+  margin-bottom: 50px;
+}
+
+.link-p {
+  left: 110px !important;
+}
+
+.link-list-name {
+  display: flex;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #0000ff;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.company-url {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 0 20px;
+  line-height: 40px;
+}
+
+.link-list-detail {
+  display: flex;
+  width: 100%;
+}
+
+.link-list-L {
+  width: 30%;
+}
+
+.link-list-R {
+  width: 70%;
+  font-size: 18px;
+  background-color: #DAF6FA;
+  padding: 20px 50px;
+}
+
+/* Scroll Animations */
+.link-list {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.link-list.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}

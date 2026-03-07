@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+.mycover-content {
+  background-image: url('../images/cyber01.jpg');
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.mycover-content img {
+  position: absolute;
+  width: 1000px;
+  top: 10%;
+}
+
+.mycover-text01 {
+  position: relative;
+  top: 10%;
+  left: 40%;
+  width: 750px;
+}
+
+.mycover-text01 h2 {
+  position: absolute;
+  color: #ffffff;
+  font-size: 48px;
+  top: -20px;
+  left: 60px;
+}
+
+.mycover-h2back {
+  background: linear-gradient(to right,
+      rgba(0, 0, 255, 0.7) 0%,
+      rgba(255, 255, 255, 0.7) 100%);
+  width: 750px;
+  height: 60px;
+  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+}
+
+.mycover-text02 {
+  position: absolute;
+  top: 18%;
+  left: 42%;
+  color: #333333;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 700px;
+  height: auto;
+  padding: 20px;
+}
+
+.inquire-cover {
+  position: relative;
+  top: 50%;
+  left: 10%;
+}
+
+.inquire-cover h3 {
+  position: absolute;
+  color: #ffffff;
+  font-size: 36px;
+  background-color: #0000ff;
+  padding: 20px 40px;
+  top: -80px;
+  z-index: 1;
+}
+
+.inquire-cover p {
+  position: absolute;
+  color: #333333;
+  font-size: 20px;
+  background-color: #fff;
+  z-index: 0;
+  padding: 20px 10px;
+  top: 10px;
+  left: 20px;
+}
+
+/* 表示されたときに付与されるクラス */
+.mycover-text01,
+.mycover-text02 {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.mycover-text01.fade-in,
+.mycover-text02.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.inquire-cover {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.inquire-cover.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
