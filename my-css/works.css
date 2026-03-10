@@ -24,6 +24,10 @@
   padding-bottom: 150px;
 }
 
+.works-title-p {
+  left: 170px !important;
+}
+
 .works-contentsarea {
   width: 100%;
 }

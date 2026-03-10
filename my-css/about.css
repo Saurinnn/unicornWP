@@ -23,8 +23,16 @@
   width: 60%;
 }
 
+.about-shadow {
+  width: 332px;
+}
+
+.about-back {
+  width: 332px;
+}
+
 .section-about-p {
-  left: 190px !important;
+  left: 200px !important;
 }
 
 .about-wrapper {

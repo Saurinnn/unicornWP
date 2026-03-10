@@ -89,7 +89,7 @@
       <div class="section-back-shadow"></div>
       <div class="section-back"></div>
       <h2>Works</h2>
-      <p>実績</p>
+      <p class="works-title-p">実績</p>
     </div>
   </div>
   <div class="works-contentsarea">

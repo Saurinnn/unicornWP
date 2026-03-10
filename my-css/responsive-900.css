@@ -23,7 +23,7 @@
 
   .mycover-text01 h2 {
     font-size: 36px;
-    top: -40px;
+    top: -10px;
     left: 60px;
   }
 
@@ -74,7 +74,7 @@
 
   .section-title h2 {
     font-size: 28px;
-    top: 1px;
+    top: 22px;
     left: 20px;
   }
 
@@ -84,11 +84,20 @@
   }
 
   .section-about-p {
-    left: 160px !important;
+    left: 170px !important;
+  }
+
+  .about-shadow,
+  .about-back {
+    width: 300px;
+  }
+
+  .works-title-p {
+    left: 140px !important;
   }
 
   .section-office-p {
-    left: 170px !important;
+    left: 190px !important;
   }
 
   .link-p {
@@ -174,7 +183,7 @@
   .service h2 {
     font-size: 28px;
     padding: 20px 40px;
-    top: 1720px;
+    top: 1820px;
     left: 15%;
   }
 
