@@ -49,3 +49,20 @@ function my_recruit_page_styles()
   }
 }
 add_action('wp_enqueue_scripts', 'my_recruit_page_styles');
+
+function cocoon_child_enqueue_page_blog_style()
+{
+
+  if (is_page('blog')) {
+
+    wp_enqueue_style(
+      'cocoon-child-page-blog',
+      get_stylesheet_directory_uri() . '/page-blog.css',
+      array('cocoon-child-style'),
+      filemtime(get_stylesheet_directory() . '/page-blog.css')
+    );
+
+  }
+}
+
+add_action('wp_enqueue_scripts', 'cocoon_child_enqueue_page_blog_style');
