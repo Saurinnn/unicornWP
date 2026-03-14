@@ -139,6 +139,10 @@
     width: 200px;
   }
 
+  .title-recruit-p {
+    left: 110px !important;
+  }
+
   /* ===== About ===== */
   #about {
     padding: 60px 0;
@@ -442,7 +446,7 @@
   }
 
   .recruit-title {
-    padding: 40px 0 20px 0;
+    padding: 100px 0 20px 0;
   }
 
   .recruit-text-p {

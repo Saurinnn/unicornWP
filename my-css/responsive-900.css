@@ -109,6 +109,10 @@
     width: 340px;
   }
 
+  .title-recruit-p {
+    left: 140px !important;
+  }
+
   /* ===== About ===== */
   .about-textbox {
     padding: 60px 50px;
