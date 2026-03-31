@@ -4,6 +4,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const targets = [
     ".mycover-text01", ".mycover-text02", ".inquire-cover",
+    ".blog-li",
     ".section-title",
     ".about-textbox",
     ".about02-content-left", ".about02-content-right",

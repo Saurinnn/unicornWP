@@ -1,3 +1,15 @@
+<?php
+/**
+ * Cocoon WordPress Theme
+ * @author: yhira
+ * @link: https://wp-cocoon.com/
+ * @license: http://www.gnu.org/licenses/gpl-2.0.html GPL v2 or later
+ */
+if (!defined('ABSPATH'))
+  exit;
+get_header();
+?>
+
 
 <?php get_header(); ?>
   <div class="my-content">
@@ -11,7 +23,7 @@
       </div>
       <p class="mycover-text02">ユニコーンジャパンは、福岡を拠点とするエンターテイメント系制作会社です。革新的なソリューションと最高水準の品質で、あなたのビジネスをサポートします。家庭用ゲーム機から映像制作、IT関連業務まで、幅広いニーズに柔軟に対応。一緒にビジネスの可能性を広げましょう。</p>
       <div class="inquire-cover">
-        <h3>お問い合わせはこちら</h3>
+        <a href="<?php echo home_url('/contact'); ?>"><h3>お問い合わせはこちら</h3></a>
         <p>お見積もり・ご相談等、お気軽にご連絡ください。</p>
       </div>
     </div>
@@ -45,10 +57,12 @@ if ($the_query->have_posts()):
 <a href="<?php the_permalink(); ?>">
         <li class="blog-li">
         <div class="li-pic">
-        <?php    if (has_post_thumbnail()) {
-      echo get_the_post_thumbnail(get_the_ID(), array(270, 180));    }
+        <?php if (has_post_thumbnail()) {
+      echo get_the_post_thumbnail(get_the_ID(), array(270, 180));
+    }
     else {
-      echo '<img src="' . get_stylesheet_directory_uri() . '/images/noimg.jpg" alt="No Image" width="270" height="180">';    }
+      echo '<img src="' . get_stylesheet_directory_uri() . '/images/noimg.png" alt="No Image" width="270" height="180">';
+    }
 ?>
             </div>
             <div class="li-text">
@@ -83,7 +97,7 @@ else:
     <?php
 endif; ?>
 </ul>
-      <a href="/suzaki/wp/blog"><button>VIEW MORE>>></button></a>
+      <a href="<?php echo home_url('/blog'); ?>"><button>VIEW MORE>>></button></a>
     </div>
   </div>
   </section>
@@ -404,7 +418,7 @@ endif; ?>
     <h2 class="contact-h2">CONTACT</h2>
     <p class="contact-title-p">お問い合わせ</p>
     <p class="contact-p2">ご質問やお仕事のご依頼、お見積もりなどお気軽にお問い合わせください。</p>
-    <button class="contact-button">お問い合わせはこちら</button>
+      <a href="<?php echo home_url('/contact'); ?>"><button class="contact-button">お問い合わせはこちら</button></a>
     <div class="contact-detail">
       <p>電話でのお問い合わせ</p>
       <div class="contact-tel">

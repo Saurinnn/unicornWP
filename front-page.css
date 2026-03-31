@@ -57,8 +57,8 @@
 }
 
 .li-pic img {
-  max-width: 270px;
-  height: auto;
+  width: 270px !important;
+  height: 180px !important;
   display: block;
 }
 
@@ -68,7 +68,7 @@
   font-size: 14px;
 }
 
-.li-text:hover {
+.blog-li:hover {
   color: #0000ff;
 }
 
@@ -94,6 +94,18 @@
   background-color: #0000FF;
 }
 
+/* Scroll Animation */
+.blog-li {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.blog-li.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* =========================
    タブレット（900px以下）
 ========================= */
@@ -103,8 +115,20 @@
     padding: 40px 15px;
   }
 
+  .blog-li {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .li-pic img {
+    width: 592px !important;
+    height: 405px !important;
+    margin-bottom: 10px;
+    margin: 0 auto;
+  }
+
   .li-text {
-    width: 65%;
+    width: 100%;
     font-size: 13px;
   }
 
@@ -122,15 +146,9 @@
     padding: 30px 10px;
   }
 
-  .blog-li {
-    flex-direction: column;
-    padding: 0 10px;
-  }
-
   .li-pic img {
-    max-width: 100%;
-    width: 100%;
-    margin-bottom: 10px;
+    width: 270px !important;
+    height: 180px !important;
   }
 
   .li-text {

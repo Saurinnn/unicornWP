@@ -1,3 +1,15 @@
+<?php
+/**
+ * Cocoon WordPress Theme
+ * @author: yhira
+ * @link: https://wp-cocoon.com/
+ * @license: http://www.gnu.org/licenses/gpl-2.0.html GPL v2 or later
+ */
+if (!defined('ABSPATH'))
+  exit;
+get_header();
+?>
+
 <?php get_header(); ?>
 <div class="mycontent">
     <section id="recruit-content">
