@@ -325,11 +325,11 @@ endif; ?>
     </div>
     <div class="office-detail">
       <h3>資本金</h3>
-      <p>株式会社ユニコーンジャパン</p>
+      <p>300万</p>
     </div>
     <div class="office-detail">
       <h3>設立日</h3>
-      <p>株式会社ユニコーンジャパン</p>
+      <p>2003年9月2日</p>
     </div>
   </dic>
   <div class="office-info-right">

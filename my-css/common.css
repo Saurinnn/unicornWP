@@ -1,0 +1,13 @@
+/* お問い合わせフォーム*/
+.page-id-44 .sns-buttons,
+.page-id-44 .sns-share-message,
+.page-id-44 .sns-follow-message,
+.page-id-44 .author-info,
+.page-id-44 .date-tags,
+.page-id-44 #sidebar {
+  display: none;
+}
+
+.page-id-44 .content-in {
+  justify-content: center;
+}

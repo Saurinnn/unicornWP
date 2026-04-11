@@ -28,6 +28,7 @@ Version:    1.1.3
 @import url('./my-css/contact.css');
 @import url('./my-css/responsive-900.css');
 @import url('./my-css/responsive-540.css');
+@import url('./my-css/common.css');
 
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
